@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Prompt', sans-serif;
+}
+
+.index-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "redes-sociales" "navList" "logo" 
+    "main" "main" "main"
+    "footer" "footer" "footer" ;
+}
+
+header{
+    margin: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociales{
+    grid-area: redes-sociales;
+}
+
+.redes-sociales-item{
+    padding: 0.5rem;
+}
+
+.navList{
+    grid-area: navList;;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    margin: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.logoImg{
+    width: 17rem;
+}
+
+main{
+    grid-area: main;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(../assets/img/backgroundc.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 10rem;
+}
+
+.encabezado-index{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.4rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.encabezado-index-item{
+    margin: 0px;
+}
+
+.main-button{
+    font-family: 'Prompt', sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 1.5rem;    
+}
+
+.main-button:hover{
+    color: red;
+}
+
+.quiz-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "form-usuario"
+    "resultado-quiz"
+    "footer";
+}
+
+.form-usuario{
+    grid-area: form-usuario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+fieldset{
+    margin: 3rem;
+}
+
+.resultado-quiz{
+    grid-area: resultado-quiz;
+}
+
+.respuestas-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "form-quiz"
+    "footer";
+}
+
+.form-quiz{
+    grid-area: form-quiz;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 8rem;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
